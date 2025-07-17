@@ -1300,7 +1300,7 @@ section {
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
-  border-top: 2px solid var(--color-primary);
+  /* border-top: 2px solid var(--color-primary); */
 }
 .footer .footer-content {
   background-color: #151515;
@@ -2128,8 +2128,38 @@ section {
 .opinion-card {
   background-color: #fff;
   transition: 0.3s ease;
+  padding: 40px 25px;
+  border-radius: 15px;
 }
 .opinion-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.opinion-card h4 {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 2rem;
+  color: var(--text-tittle-color);
+}
+.opinion-card p {
+  margin-bottom: 20px;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+}
+.opinion-card p strong {
+  color: #c40233;
+}
+.opinion-btn {
+  margin-top: 20px;
+}
+.opinion-btn a {
+  background-color: var(--color-primary);
+  color: var(--color-inverse);
+  padding: 8px 20px;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 700;
+  border-radius: 6px;
+  transition: all 250ms;
+  font-family: var(--font-secondary);
 }
