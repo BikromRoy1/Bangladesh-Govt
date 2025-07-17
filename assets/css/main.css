@@ -25,8 +25,8 @@
   --color-default-rgb: 33, 37, 41;
   --color-background: #ffffff;
   --color-background-rgb: 255, 255, 255;
-  --color-primary: #e84545;
-  --color-primary-rgb: 232, 69, 69;
+  --color-primary: #198754;
+  --color-primary-rgb: 52, 168, 83;
   --color-secondary: #32353a;
   --color-secondary-rgb: 50, 53, 58;
   --color-box-background: #ffffff;
@@ -36,7 +36,7 @@
   --text-tittle-color: #002147;
   --section-background: #f5f7fb;
   --top-header-background: #00472a;
-  --section-RGB-Background: rgb(253 231 236);
+  --section-RGB-Background: rgb(231 253 233);
   --section-background-green: #0d914610;
 }
 
@@ -1897,7 +1897,7 @@ section {
 # counter up
 --------------------------------------------------------------*/
 .counter-section {
-  /* background: var(--section-background-green); */
+  background: var(--section-background-green);
   padding: 80px 0px;
 }
 .rts__single__counter .heading__color {
@@ -1938,4 +1938,198 @@ section {
   font-family: var(--font-secondary);
   font-weight: 700;
   font-size: 18px;
+}
+/* !-- Home Pages */
+/*--------------------------------------------------------------
+# How to crating account
+--------------------------------------------------------------*/
+.crating-account-step {
+  padding: 80px 0px;
+}
+.process-work-wrapper {
+  position: relative;
+}
+.process-work-wrapper .line-shape {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 880px;
+}
+.process-work-wrapper .line-shape img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1399px) {
+  .process-work-wrapper .line-shape {
+    display: none;
+  }
+}
+.work-process-items {
+  margin-top: 30px;
+}
+.work-process-items .icon {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+  position: relative;
+  margin: 0 auto;
+}
+.work-process-items .icon img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+.work-process-items .icon .number {
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 400;
+}
+.work-process-items .content {
+  margin-top: 30px;
+}
+.work-process-items .content h4 {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-tittle-color);
+}
+.work-process-items .content p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--title-color);
+}
+.work-process-items .content.style-2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+/* !-- Home Pages */
+/*--------------------------------------------------------------
+# Give your opinion
+--------------------------------------------------------------*/
+.opinion-section {
+  position: relative;
+}
+.opinion-section .inner-container {
+  position: relative;
+  display: block;
+  background: #e6f2e8;
+  /* background: var(--section-background-green); */
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 80px 40px 80px 100px;
+}
+.opinion-section .inner-container .pattern-layer {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.opinion-section .image-box {
+  position: relative;
+  display: block;
+}
+
+.opinion-section .image-box .image {
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 20px 24px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.opinion-section .image-box .image img {
+  width: 100%;
+  border-radius: 10px;
+}
+.opinion-section .content-box {
+  position: relative;
+  display: block;
+}
+.opinion-section .content-box h2 {
+  display: block;
+  font-size: 48px;
+  line-height: 53px;
+  margin-bottom: 24px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+}
+.opinion-section .content-box h2 span {
+  color: var(--color-primary);
+}
+
+.opinion-section .content-box .list-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.opinion-section .content-box .list-item li {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--title-color);
+  padding-left: 36px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.opinion-section .content-box .list-item li:last-child {
+  margin-bottom: 0px;
+}
+
+.opinion-section .content-box .list-item li:before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/animation/icon-9.png);
+  left: 0px;
+  top: 1px;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+.btn-box {
+  margin-top: 35px;
+}
+.btn-box a {
+  background-color: var(--color-primary);
+  color: var(--color-inverse);
+  padding: 13px 30px;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: all 250ms;
+  font-family: var(--font-secondary);
+}
+/* !-- Home Pages */
+/*--------------------------------------------------------------
+# Top opinion
+--------------------------------------------------------------*/
+.Top-opinion {
+  padding: 80px 0px;
+}
+.opinion-card {
+  background-color: #fff;
+  transition: 0.3s ease;
+}
+.opinion-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
