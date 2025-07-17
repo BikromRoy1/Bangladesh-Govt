@@ -1,0 +1,73 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #topbar .logo-info img {
+    width: 60px;
+  }
+  #topbar .logo-info h3 {
+    font-size: 15px;
+  }
+  #about .about-details p {
+    margin-top: 10px;
+  }
+  #sepeechPresident .President-info p {
+    margin-top: 10px;
+  }
+  #sepeechPresident .President-about {
+    margin-bottom: 15px;
+  }
+  #notice .notice-all-btn {
+    text-align: left;
+    margin-top: 10px;
+  }
+  .news-animation-icons {
+    display: none;
+  }
+  .news-animation-icons2 {
+    display: none;
+  }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #about .about-details p {
+    margin-top: 10px;
+  }
+  #sepeechPresident .President-info p {
+    margin-top: 10px;
+  }
+  #sepeechPresident .President-about {
+    margin-bottom: 15px;
+  }
+  #notice .notice-all-btn {
+    text-align: left;
+    margin-top: 10px;
+  }
+  .news-animation-icons {
+    display: none;
+  }
+  .news-animation-icons2 {
+    display: none;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #notice .notice-all-btn {
+    text-align: left;
+    margin-top: 10px;
+  }
+  .news-animation-icons {
+    display: none;
+  }
+  .news-animation-icons2 {
+    display: none;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
