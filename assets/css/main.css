@@ -1801,8 +1801,7 @@ section {
 --------------------------------------------------------------*/
 .bangladesh-national {
   background: transparent;
-  padding: 0px 0px;
-  padding-bottom: 20px;
+  padding: 20px 0px;
 }
 .bangladesh-national-card {
   background: #8cc643;
