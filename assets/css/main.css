@@ -450,7 +450,7 @@ section {
   text-transform: uppercase;
   border-bottom: solid 1px #f5f5f5;
   color: #333333;
-  font-weight: 500;
+  font-weight: 600;
 }
 .navbar .dropdown ul a i {
   font-size: 12px;
@@ -749,35 +749,62 @@ section {
   font-family: var(--font-secondary);
 }
 /*--------------------------------------------------------------
-# Speech of President
+# new and notice
 --------------------------------------------------------------*/
-#sepeechPresident {
+#newsAndMedia {
   padding-top: 10px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
+  background: transparent;
 }
-#sepeechPresident .President-about {
+#newsAndMedia .main-news-about {
   box-shadow: 0 0 4px #ddd;
   padding: 10px 10px;
   border-radius: 5px;
 }
-#sepeechPresident .President-title {
-  background: var(--text-tittle-color);
+#newsAndMedia .main-news-title {
+  background: #609513;
   padding: 10px;
   margin-bottom: 10px;
 }
-#sepeechPresident .President-title h4 {
+#newsAndMedia .main-news-title h4 {
   margin-bottom: 0px;
   font-size: 20px;
   text-transform: capitalize;
   color: var(--color-inverse);
+  font-weight: 600;
 }
-#sepeechPresident .President-info p {
-  text-align: justify;
-  color: var(--text-tittle-color);
+#newsAndMedia .main-news-info ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#newsAndMedia .main-news-info ul li {
+  color: #333;
+  font-size: 14px;
   font-weight: 500;
+  font-family: var(--font-secondary);
   margin-bottom: 6px;
 }
-#sepeechPresident .President-info a {
+#newsAndMedia .main-news-info ul li:last-child {
+  margin-bottom: 0px;
+}
+#newsAndMedia .main-news-info ul li a {
+  color: #333;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+#newsAndMedia .main-news-info ul li a:hover {
+  color: var(--color-primary);
+}
+#newsAndMedia .main-news-info ul li a i {
+  color: var(--color-primary);
+}
+#newsAndMedia .main-news-info .news-button {
+  text-align: right;
+  margin-top: 8px;
+}
+#newsAndMedia .main-news-info .news-button a {
   background: var(--color-primary);
   color: var(--color-inverse);
   border-radius: 30px;
@@ -785,6 +812,7 @@ section {
   font-size: 13px;
   font-weight: 600;
   font-family: var(--font-secondary);
+  text-align: right;
 }
 
 /*--------------------------------------------------------------
@@ -1769,11 +1797,47 @@ section {
 
 /* !-- Home Pages */
 /*--------------------------------------------------------------
+# Bangladesh National
+--------------------------------------------------------------*/
+.bangladesh-national {
+  background: transparent;
+  padding: 0px 0px;
+  padding-bottom: 20px;
+}
+.bangladesh-national-card {
+  background: #8cc643;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 5px;
+  border-right: 2px solid #fff;
+  cursor: pointer;
+}
+.bangladesh-national-card:hover {
+  background: #e40001;
+}
+
+.bangladesh-national-card h4 {
+  margin-bottom: 0px;
+  font-size: 26px;
+  color: white;
+  line-height: 33px;
+}
+.bangladesh-national-card p {
+  margin-bottom: 0px;
+  font-size: 13px;
+  line-height: 11px;
+  color: white;
+}
+
+/* !-- Home Pages */
+/*--------------------------------------------------------------
 # counter up
 --------------------------------------------------------------*/
 .counter-section {
   background: transparent;
-  padding: 60px 0px;
+  padding: 40px 0px;
   padding-bottom: 40px;
 }
 .counter-container {
@@ -1906,6 +1970,7 @@ section {
   position: relative;
   background: transparent;
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 .opinion-section .inner-container {
   position: relative;
@@ -2046,4 +2111,106 @@ section {
   border-radius: 6px;
   transition: all 250ms;
   font-family: var(--font-secondary);
+}
+/* !-- Home Pages */
+/*--------------------------------------------------------------
+# voting section
+--------------------------------------------------------------*/
+.voting-section {
+  background: transparent;
+  padding: 30px 0px;
+}
+.poll-box {
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+.poll-box h4 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 2rem;
+  color: var(--text-tittle-color);
+}
+
+.poll-option {
+  margin-bottom: 20px;
+}
+
+.poll-option span {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-family: var(--font-secondary);
+}
+
+.bar {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.fill {
+  height: 100%;
+  background: var(--color-primary);
+  transition: width 0.4s ease;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info span {
+  font-size: 15px;
+  color: #333;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+}
+
+.info button {
+  padding: 4px 12px;
+  border: 1px solid var(--color-primary);
+  background: #fff;
+  color: var(--color-primary);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.info button:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.show-results {
+  text-align: center;
+}
+
+.show-results button {
+  background: #fff;
+  border: 1px solid var(--color-primary);
+  padding: 6px 16px;
+  border-radius: 6px;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.show-results button:hover {
+  background: var(--color-primary);
+  color: #fff;
 }
