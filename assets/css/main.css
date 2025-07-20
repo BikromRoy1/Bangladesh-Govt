@@ -756,55 +756,55 @@ section {
   padding-bottom: 20px;
   background: transparent;
 }
-#newsAndMedia .main-news-about {
+.main-news-about {
   box-shadow: 0 0 4px #ddd;
   padding: 10px 10px;
   border-radius: 5px;
 }
-#newsAndMedia .main-news-title {
+.main-news-title {
   background: #609513;
   padding: 10px;
   margin-bottom: 10px;
 }
-#newsAndMedia .main-news-title h4 {
+.main-news-title h4 {
   margin-bottom: 0px;
   font-size: 20px;
   text-transform: capitalize;
   color: var(--color-inverse);
   font-weight: 600;
 }
-#newsAndMedia .main-news-info ul {
+.main-news-info ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-#newsAndMedia .main-news-info ul li {
+.main-news-info ul li {
   color: #333;
   font-size: 14px;
   font-weight: 500;
   font-family: var(--font-secondary);
   margin-bottom: 6px;
 }
-#newsAndMedia .main-news-info ul li:last-child {
+.main-news-info ul li:last-child {
   margin-bottom: 0px;
 }
-#newsAndMedia .main-news-info ul li a {
+.main-news-info ul li a {
   color: #333;
   display: flex;
   align-items: start;
   gap: 10px;
 }
-#newsAndMedia .main-news-info ul li a:hover {
+.main-news-info ul li a:hover {
   color: var(--color-primary);
 }
-#newsAndMedia .main-news-info ul li a i {
+.main-news-info ul li a i {
   color: var(--color-primary);
 }
-#newsAndMedia .main-news-info .news-button {
+.main-news-info .news-button {
   text-align: right;
   margin-top: 8px;
 }
-#newsAndMedia .main-news-info .news-button a {
+.main-news-info .news-button a {
   background: var(--color-primary);
   color: var(--color-inverse);
   border-radius: 30px;
@@ -815,13 +815,13 @@ section {
   text-align: right;
 }
 
-#newsAndMedia .category-list {
+.category-list {
   list-style: none;
   padding: 0px;
   margin: 0px;
 }
 
-#newsAndMedia .category-list li {
+.category-list li {
   position: relative;
   display: block;
   margin-bottom: 8px;
@@ -829,15 +829,70 @@ section {
   padding: 3px 10px;
   border-radius: 5px;
 }
-#newsAndMedia .category-list li a {
+.category-list li a {
   position: relative;
   display: block !important;
   font-size: 15px !important;
   line-height: 30px !important;
   color: var(--title-color);
 }
-#newsAndMedia .category-list li a span {
+.category-list li a span {
   float: right;
+}
+/*--------------------------------------------------------------
+# all blogs
+--------------------------------------------------------------*/
+.blog {
+  background: transparent;
+}
+
+/** styled-pagination */
+.pagination {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.pagination li {
+  position: relative;
+  display: inline-block;
+  margin: 0px 3px;
+}
+
+.pagination li a {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  color: #666666;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border: 1px solid #e5e5e5;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 1;
+  transition: all 500ms ease;
+}
+.pagination li a:hover,
+.pagination li a.current {
+  color: #111111;
+}
+.pagination li a.current {
+  background-color: var(--color-primary);
+  color: var(--color-inverse);
+}
+.pagination li a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-inverse);
+}
+.pagination li a i {
+  font-size: 18px;
+}
+
+.mr-0 {
+  margin: 0px !important;
 }
 /*--------------------------------------------------------------
 # Notice Boards
@@ -2148,6 +2203,7 @@ section {
 }
 .poll-box {
   margin: 20px auto;
+  margin-top: 0px;
   border: 1px solid #ddd;
   border-radius: 12px;
   padding: 20px;
