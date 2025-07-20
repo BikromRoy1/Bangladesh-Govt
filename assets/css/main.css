@@ -267,7 +267,7 @@ section {
 }
 .breadcrumbs:before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   inset: 0;
 }
@@ -1225,7 +1225,7 @@ section {
 # OUR Phooto Gallery
 --------------------------------------------------------------*/
 #gallery {
-  background: var(--section-background);
+  background: transparent;
 }
 .gallery .gallery-item {
   position: relative;
