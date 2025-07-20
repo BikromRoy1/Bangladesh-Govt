@@ -815,6 +815,30 @@ section {
   text-align: right;
 }
 
+#newsAndMedia .category-list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#newsAndMedia .category-list li {
+  position: relative;
+  display: block;
+  margin-bottom: 8px;
+  border: 1px solid #dee2e6;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+#newsAndMedia .category-list li a {
+  position: relative;
+  display: block !important;
+  font-size: 15px !important;
+  line-height: 30px !important;
+  color: var(--title-color);
+}
+#newsAndMedia .category-list li a span {
+  float: right;
+}
 /*--------------------------------------------------------------
 # Notice Boards
 --------------------------------------------------------------*/
@@ -919,6 +943,8 @@ section {
   overflow: hidden;
   position: relative;
   z-index: 1;
+  background: transparent;
+  padding: 40px 0px;
 }
 .news-animation-icons {
   position: absolute;
@@ -958,7 +984,7 @@ section {
 }
 .news-image img {
   border-radius: 5px 5px 0 0;
-  height: 240px;
+  height: 180px;
   object-fit: cover;
   transition: all 0.6s;
 }
@@ -984,7 +1010,7 @@ section {
   font-weight: 500;
 }
 .news-info {
-  padding: 30px 30px 35px 30px;
+  padding: 25px 30px 25px 30px;
   text-align: center;
   border-radius: 0 0 5px 5px;
 }
@@ -993,7 +1019,7 @@ section {
   margin-bottom: 20px;
   text-align: center;
   line-height: 1.4;
-  font-size: 18px;
+  font-size: 17px;
 }
 .news-info h4 a {
   color: var(--text-title-color);
@@ -2130,21 +2156,21 @@ section {
 }
 
 .poll-box h4 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: 600;
   font-size: 20px;
-  line-height: 2rem;
+  line-height: 30px;
   color: var(--text-tittle-color);
 }
 
 .poll-option {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .poll-option span {
   display: block;
   margin-bottom: 6px;
-  font-weight: 600;
+  font-weight: 500;
   font-family: var(--font-secondary);
 }
 
@@ -2176,7 +2202,7 @@ section {
 }
 
 .info button {
-  padding: 4px 12px;
+  padding: 3px 11px;
   border: 1px solid var(--color-primary);
   background: #fff;
   color: var(--color-primary);
@@ -2200,17 +2226,167 @@ section {
 .show-results button {
   background: #fff;
   border: 1px solid var(--color-primary);
-  padding: 6px 16px;
+  padding: 4px 14px;
   border-radius: 6px;
   color: var(--color-primary);
   cursor: pointer;
   transition: 0.3s;
   font-family: var(--font-secondary);
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .show-results button:hover {
   background: var(--color-primary);
   color: #fff;
+}
+/* more */
+.circle-chart {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.circle-chart svg {
+  transform: rotate(-90deg);
+}
+
+.circle-chart circle {
+  fill: none;
+  stroke-width: 10;
+}
+
+.circle-chart .bg {
+  stroke: #e6e6e6;
+}
+
+.circle-chart .progress {
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.6s ease;
+}
+
+.circle-chart .percent-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.vote-label {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.poll-box-2 {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+/* more */
+.opinion-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+.opinion-section__circle {
+  width: 150px;
+  height: 150px;
+  background: conic-gradient(var(--color-primary) 0% 60%, #ff4d4f 60% 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.opinion-section__circle:hover {
+  transform: scale(1.05);
+}
+
+.opinion-section__circle-inner {
+  background: #fff;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.opinion-section__percent {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.opinion-section__label {
+  font-size: 18px;
+  color: #555;
+}
+
+.opinion-section__content {
+  flex: 1;
+}
+
+.opinion-section__title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.opinion-section__overview {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.opinion-section__box {
+  flex: 1 1 45%;
+  background: #ebebeb;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  align-items: center;
+}
+.opinion-section__box:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+}
+
+.opinion-section__box h4 {
+  font-size: 20px;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.opinion-section__box p {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0px;
+}
+.red-box h4 {
+  color: #ff4d4f;
+}
+.red-box p {
+  color: #ff4d4f;
 }
