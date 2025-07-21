@@ -1175,6 +1175,7 @@ section {
 --------------------------------------------------------------*/
 .teacher {
   padding-bottom: 40px;
+  background: transparent;
 }
 .teacher .teacher-items {
   margin-bottom: 20px;
@@ -1191,8 +1192,8 @@ section {
   margin-bottom: 20px;
 }
 .teacher .teacher-card .teacher-images img {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 150px;
+  max-height: 150px;
   border-radius: 100%;
   object-fit: cover;
 }
