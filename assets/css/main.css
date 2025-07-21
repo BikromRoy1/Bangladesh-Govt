@@ -2453,3 +2453,73 @@ section {
 .red-box p {
   color: #ff4d4f;
 }
+
+/* !-- Upazila Pages */
+/*--------------------------------------------------------------
+# Upazila section
+--------------------------------------------------------------*/
+.upazila {
+  position: relative;
+  background: transparent;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.upazila .inner-container {
+  position: relative;
+  display: block;
+  background: #e6f2e8;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 30px 20px 30px 20px;
+}
+.upazila .image-box {
+  position: relative;
+  display: block;
+}
+
+.upazila .image-box .image {
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 20px 24px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.upazila .image-box .image img {
+  width: 100%;
+  border-radius: 10px;
+}
+.upazila .content-box {
+  position: relative;
+  display: block;
+}
+.upazila .content-box h2 {
+  display: block;
+  font-size: 26px;
+  line-height: 36px;
+  margin-bottom: 15px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+}
+.upazila .content-box p {
+  text-align: justify;
+  color: var(--text-tittle-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+.upazila .upazila-details {
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid var(--color-primary);
+  text-align: center;
+}
+.upazila .upazila-details h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1rem;
+  color: var(--text-tittle-color);
+}
+.upazila .upazila-details p {
+  margin-bottom: 0px;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 14px;
+}
