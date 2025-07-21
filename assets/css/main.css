@@ -344,6 +344,12 @@ section {
   object-fit: cover;
 }
 
+#topbar .title-name-website {
+  font-size: 35px;
+  color: #fbfbfb;
+  text-shadow: 2px 3px 6px #000;
+  font-weight: 600;
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
