@@ -49,24 +49,47 @@
             <div class="container">
                 <div class="row justify-content-center ">
                     <div class="col-lg-9">
-                        <div class="row">
-                            <div class="col-lg-5"></div>
+                        <div class="row justify-content-center">
                             <div class="col-lg-7">
-                                <div class="login-title">
-                                    <h4>একাউন্টে লগইন করুন</h4>
-                                    <p>
-                                        আমরা আপনাকে সাহায্য করার জন্য এখানে আছি এবং আমরা আপনার সাথে যোগাযোগ করতে আগ্রহী।
-                                    </p>
-                                </div>
-                                <form action="#" method="post" role="form" class="php-email-form">
-                                    <div class="form-group">
-                                        <label for="studentName">মোবাইল বা ইমেইল
-                                        </label>
-                                        <input type="text" class="form-control" name="studentName" id="studentName"
-                                            placeholder="Your name" required />
+                                <div class="login-form">
+                                    <div class="login-title">
+                                        <h4>Login into account</h4>
+                                        <p>
+                                            Use your credentials to access your account.
+                                        </p>
                                     </div>
-
-                                </form>
+                                    <form action="#" method="post" role="form" class="php-email-form">
+                                        <div class="form-group">
+                                            <label class="form-label" for="email">Email
+                                            </label>
+                                            <input type="email" class="form-control" name="email" id="email"
+                                                placeholder="Your Email or Phone" required />
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <label class="form-label" for="password">Password
+                                            </label>
+                                            <input type="password" class="form-control" name="password" id="password"
+                                                placeholder="Enter Your Password" required />
+                                        </div>
+                                        <div class="mt-2 Forget-password">
+                                            <a href="#" class="">Forget your
+                                                password?</a>
+                                        </div>
+                                        <button type="submit">
+                                            Sign In </button>
+                                    </form>
+                                    <div class="line mb-4">
+                                        <span>or </span>
+                                    </div>
+                                    <div class="social-login d-flex justify-content-center align-items-center gap-3">
+                                        <a title="Twitter" href="#"><i class="bi bi-twitter"></i></a>
+                                        <a title="Facebook" href="#"><i class="bi bi-google"></i></a>
+                                        <a title="Facebook" href="#"><i class="bi bi-facebook"></i></a>
+                                    </div>
+                                    <div class="any-account">
+                                        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
