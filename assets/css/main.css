@@ -1207,8 +1207,8 @@ section {
   color: var(--text-tittle-color);
 }
 .teacher .teacher-info p {
-  color: var(--color-primary);
-  font-weight: 600;
+  color: #4b5563;
+  font-weight: 500;
   font-size: 15px;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -2932,9 +2932,9 @@ section {
 .blog-details-content .comment-box {
   background: linear-gradient(
     228.42deg,
-    #fef2eb 0%,
+    #f1feeb 0%,
     #f1f1f1 46.48%,
-    #e4e0ea 100.36%
+    #e0eae6 100.36%
   );
   padding: 30px;
   border-radius: 10px;
@@ -3317,4 +3317,85 @@ section {
   border-radius: 5px;
   font-size: 16px;
   font-weight: 600;
+}
+/* !--opinion Pages */
+/*--------------------------------------------------------------
+# opinion css
+--------------------------------------------------------------*/
+.user-opinion {
+  background: transparent;
+}
+.user-opinion .php-email-form .form-group {
+  padding-bottom: 6px;
+}
+
+.user-opinion .php-email-form input,
+.user-opinion .php-email-form textarea,
+.user-opinion .php-email-form select {
+  color: var(--default-color);
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  border-radius: 5px;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 10px !important;
+  font-family: var(--font-secondary);
+}
+
+.user-opinion .php-email-form input:focus,
+.user-opinion .php-email-form textarea:focus,
+.user-opinion .php-email-form select:focus {
+  border-color: var(--color-primary);
+}
+
+.user-opinion .php-email-form input::placeholder,
+.user-opinion .php-email-form textarea::placeholder,
+.user-opinion .php-email-form select::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.user-opinion .php-email-form input,
+.user-opinion .php-email-form select {
+  height: 44px;
+}
+
+.user-opinion .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.user-opinion .php-email-form button[type='submit'] {
+  background: var(--color-primary);
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-family: var(--font-secondary);
+}
+
+.user-opinion .php-email-form button[type='submit']:hover {
+  background: color-mix(in srgb, var(--color-primary) 90%, white 15%);
+}
+.user-opinion .php-email-form input[type='radio'] {
+  height: 0px !important;
+  padding: 8px !important;
+  border-radius: 50% !important;
+}
+.user-opinion .php-email-form .form-check-label {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 15px;
+}
+.user-opinion .opinion-title {
+  margin-bottom: 30px;
+}
+.user-opinion .opinion-title h4 {
+  font-size: 23px;
+  font-weight: 700;
+  color: var(--text-tittle-color);
+}
+.user-opinion .opinion-title p {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-tittle-color);
 }
